@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>t1</title>
+		<meta name="author" content="ricacom" />
+		<!-- Date: 2013-10-03 -->
+		<style>
+			#content{
+				width: 500px;
+				margin: 0 auto;
+				border: 1px solid;
+			}
+		</style>
+		
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+
+<script type="text/javascript"> 
+		$(function(){
+			$('#btnLoad').click(function(){
+			var atr = $('#btnLoad').attr('name');
+			
+				// Make Request
+				//$("#content").load("request.php")
+				
+				$.ajax({
+				  url: "request.php",
+				  data: {
+				    name: 'Ricacom',
+				    ID: 123232,
+				    admin: true,
+				    v: atr
+				    
+				  },
+				  success: function( data ) {
+				    $( "#content" ).html( "<strong>" + data + "</strong>" );
+				  }
+				});
+			
+				
+			}); 	
+			
+		});
+</script>
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
+
+			
+		</script>
+	</head>
+	<body>
+		
+		 <button id="btnLoad" class="btn  btn-primary" type="button" name="bt1">Load request</button>
+		 <div id="content">
+		 	
+		 </div>
+
+	</body>
+</html>
+
