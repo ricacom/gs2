@@ -17,7 +17,7 @@
                 border-radius: 8px;
             }
             #msg{
-                border: 1px solid red;
+                
             }
         </style>
         
@@ -26,9 +26,7 @@
 
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
-
-            
-        </script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
     <body>
         
