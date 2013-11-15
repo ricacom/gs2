@@ -1,0 +1,37 @@
+
+/* ------------ pagina de login e seus estilos----------- */
+body{
+	background-color: #F4F4F4;
+}
+ #content{
+                border: 1px solid #CCC;
+                width: 400px;
+                margin: 30px auto;
+                padding:20px 10px 10px 40px;
+                border-radius: 8px;
+                background: url("../image/logo.png") no-repeat scroll 95% 10px #FFF; 
+}
+#msg{
+ margin: 15px 0 -15px 0 
+}
+
+
+/*--- ADaptando o layout */
+
+.col-lg-6 {
+    width: 95%;
+    margin-top: 35px;
+}
+
+[class*="span"] {
+    float: right;
+ }
+ 
+#captcha{
+text-align: right;
+}
+#reload{
+  cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}

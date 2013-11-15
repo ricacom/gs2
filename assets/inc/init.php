@@ -30,7 +30,7 @@
 	}
 
 	if (DEPLOY_CONFIG == 'DEV') {
-		define('ID_DB_NAME', 'gs-2');
+		define('ID_DB_NAME', 'gs');
 		define('ID_DB_USER', 'root');
 		define('ID_DB_PASS', '');
 		define('ID_DB_HOST', 'localhost');
@@ -44,5 +44,6 @@
 	}
 
 	
-	$oeddb  = new fDatabase('mysql', ID_DB_NAME, ID_DB_USER, ID_DB_PASS, ID_DB_HOST);
+	$gsdb  = new fDatabase('mysql', ID_DB_NAME, ID_DB_USER, ID_DB_PASS, ID_DB_HOST);
 	
+    //echo DEPLOY_CONFIG;
